@@ -3,19 +3,6 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
-    <Button
-            android:id="@+id/add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add New"
-            android:onClick="onClick"/>
-
-    <Button
-            android:id="@+id/delete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Delete First"
-            android:onClick="onClick"/>
 
     <TextView
             android:layout_width="fill_parent"
@@ -24,8 +11,9 @@
             />
     <ListView
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:id="@android:id/list"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/requiredListView"
+            android:layout_weight="1"/>
 
     <LinearLayout
             android:orientation="vertical"
@@ -40,17 +28,8 @@
             />
     <ListView
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:id="@+id/recommendedListView"/>
-
-    <TextView
-            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Prohibited"
-            />
-    <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:id="@+id/prohibitedListView"/>
+            android:id="@+id/recommendedListView"
+            android:layout_weight="1"/>
 </LinearLayout>
 
