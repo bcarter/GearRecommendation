@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Openings in standing surface"
+            android:id="@+id/checkBox"
+            android:checked="false"/>
+
+    <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Electrical"
+            android:id="@+id/checkBox1"
+            android:checked="false"/>
+
+    <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Operational Machinery"
+            android:id="@+id/checkBox2"
+            android:checked="false"/>
+
+    <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Slippery"
+            android:id="@+id/checkBox3"
+            android:checked="false"/>
+
+    <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Wind"
+            android:id="@+id/checkBox4"
+            android:checked="false"/>
+
+    <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Low Visibility"
+            android:id="@+id/checkBox5"
+            android:checked="false"/>
+</LinearLayout>
+

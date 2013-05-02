@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gear Recommendation</string>
+    <string-array name="location_array">
+        <item>Side Wall</item>
+        <item>Sloped Roof</item>
+        <item>Flat Roof</item>
+        <item>Framed Structure</item>
+    </string-array>
+    <string name="accessed_by">Accessed By</string>
+    <string-array name="access_array">
+        <item>Ladder</item>
+        <item>Scaffold</item>
+        <item>Rappel Line</item>
+    </string-array>
+    <string name="work_preformed_on">Work Preformed On</string>
+    <string-array name="work_preformed_array">
+        <item>Ladder</item>
+        <item>Scaffold</item>
+        <item>Rappel Line</item>
+        <item>Building Structure</item>
+    </string-array>
+    <string-array name="display_groups_array">
+        <item>Required</item>
+        <item>Recommended</item>
+        <item>Prohibited</item>
+    </string-array>
+    <string-array name="required_array">
+        <item>Harness</item>
+        <item>Tether Line</item>
+        <item>Hard Hat</item>
+        <item>Guard Rails</item>
+    </string-array>
+    <string-array name="recommended_array">
+        <item>Gear Tether</item>
+        <item>Respirator</item>
+        <item>Gloves</item>
+    </string-array>
+    <string-array name="prohibited_array">
+        <item>Ladder</item>
+        <item>Wheeled Cart</item>
+    </string-array>
+</resources>

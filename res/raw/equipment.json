@@ -1,0 +1,31 @@
+{"equipment": [
+    {
+        "_id": 2,
+        "item": "Item 2",
+        "information": "Info 2"
+    }
+    ,
+    {
+        "_id": 3,
+        "item": "Item 3",
+        "information": "Info 3"
+    }
+    ,
+    {
+        "_id": 4,
+        "item": "Item 4",
+        "information": "Info 4"
+    }
+    ,
+    {
+        "_id": 1,
+        "item": "Item 1",
+        "information": "How to use a harness"
+    }
+    ,
+    {
+        "_id": 5,
+        "item": "Item 5",
+        "information": "Info 5"
+    }
+]}
