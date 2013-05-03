@@ -1,39 +1,44 @@
 package gov.osha.GearRecommendation;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.List;
-import java.util.Random;
 
 public class DisplayEquipment extends Activity {
-    private EquipmentDBAdapter datasource;
+    private DBAdapter datasource;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.displayequipmentlayout);
 
-        datasource = new EquipmentDBAdapter(DisplayEquipment.this);
+        datasource = new DBAdapter(DisplayEquipment.this);
         datasource.open();
 
-        List<Equipment> values = datasource.getAllEquipment();
+        String[] requiredCriteria = {"2", "4", "5"};
+        List<Equipment> requiredValues = datasource.getAllEquipment("required", requiredCriteria);
+        String[] recommendedCriteria = {"1", "3", "5"};
+        List<Equipment> recommendedValues = datasource.getAllEquipment("recommended", recommendedCriteria);
 
         // Use the SimpleCursorAdapter to show the
         // elements in a ListView
         ListView requiredList = (ListView) findViewById(R.id.requiredListView);
         ArrayAdapter<Equipment> requiredAdapter = new ArrayAdapter<Equipment>(this,
-                android.R.layout.simple_list_item_1, values);
+                android.R.layout.simple_list_item_1, requiredValues);
         requiredList.setAdapter(requiredAdapter);
 
         ListView recommendedList = (ListView) findViewById(R.id.recommendedListView);
         ArrayAdapter<Equipment> recommendedAdapter = new ArrayAdapter<Equipment>(this,
-                android.R.layout.simple_list_item_1, values);
+                android.R.layout.simple_list_item_1, recommendedValues);
         recommendedList.setAdapter(recommendedAdapter);
+    }
+
+    public List<Integer> getSelectedCriteria() {
+        return null;
+
     }
 
     // Will be called via the onClick attribute

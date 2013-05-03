@@ -1,0 +1,61 @@
+{"equipmentCriteria": [
+    {
+        "equipmentId": 10,
+        "criteriaId": 1,
+        "level": "required"
+    }
+    ,
+    {
+        "equipmentId": 12,
+        "criteriaId": 2,
+        "level": "required"
+    }
+    ,
+    {
+        "equipmentId": 13,
+        "criteriaId": 3,
+        "level": "required"
+    }
+    ,
+    {
+        "equipmentId": 14,
+        "criteriaId": 4,
+        "level": "required"
+    }
+    ,
+    {
+        "equipmentId": 15,
+        "criteriaId": 5,
+        "level": "required"
+    }
+    ,
+    {
+        "equipmentId": 1,
+        "criteriaId": 2,
+        "level": "recommended"
+    }
+    ,
+    {
+        "equipmentId": 2,
+        "criteriaId": 3,
+        "level": "recommended"
+    }
+    ,
+    {
+        "equipmentId": 3,
+        "criteriaId": 4,
+        "level": "recommended"
+    }
+    ,
+    {
+        "equipmentId": 4,
+        "criteriaId": 5,
+        "level": "recommended"
+    }
+    ,
+    {
+        "equipmentId": 5,
+        "criteriaId": 6,
+        "level": "recommended"
+    }
+]}

@@ -1,31 +1,104 @@
 {"equipment": [
     {
+        "_id": 1,
+        "item": "req location Side Wall",
+        "information": "Info"
+    }
+    ,
+    {
         "_id": 2,
-        "item": "Item 2",
-        "information": "Info 2"
+        "item": "req location Sloped Roof",
+        "information": "Info"
     }
     ,
     {
         "_id": 3,
-        "item": "Item 3",
-        "information": "Info 3"
+        "item": "req location Flat Roof",
+        "information": "Info"
     }
     ,
     {
         "_id": 4,
-        "item": "Item 4",
-        "information": "Info 4"
-    }
-    ,
-    {
-        "_id": 1,
-        "item": "Harness",
-        "information": "How to use a harness"
+        "item": "req location Framed Structure",
+        "information": "Info"
     }
     ,
     {
         "_id": 5,
-        "item": "Item 5",
-        "information": "Info 5"
+        "item": "req accessedBy Ladder",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 6,
+        "item": "req accessedBy Scaffold",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 7,
+        "item": "req accessedBy Rappel Line",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 8,
+        "item": "req preformedOn Ladder",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 9,
+        "item": "req preformedOn Scaffold",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 10,
+        "item": "req preformedOn Rappel Line",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 11,
+        "item": "req preformedOn Building Structure",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 12,
+        "item": "req hazards Openings in standing surface",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 13,
+        "item": "req hazards Electrical",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 14,
+        "item": "req hazards Operational Machinery",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 15,
+        "item": "req hazards Slippery",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 16,
+        "item": "req hazards Wind",
+        "information": "Info"
+    }
+    ,
+    {
+        "_id": 17,
+        "item": "req hazards Low Visibility",
+        "information": "Info"
     }
 ]}
+

@@ -1,0 +1,120 @@
+{"criteria": [
+    {
+        "_id": 2,
+        "criteria": "Side Wall",
+        "type": "location",
+        "information": "Info 2"
+    }
+    ,
+    {
+        "_id": 3,
+        "criteria": "Sloped Roof",
+        "type": "location",
+        "information": "Info 3"
+    }
+    ,
+    {
+        "_id": 4,
+        "criteria": "Flat Roof",
+        "type": "location",
+        "information": "Info 4"
+    }
+    ,
+    {
+        "_id": 1,
+        "criteria": "Framed Structure",
+        "type": "location",
+        "information": "How to use a harness"
+    }
+    ,
+    {
+        "_id": 5,
+        "criteria": "Ladder",
+        "type": "accessedBy",
+        "information": "Info 5"
+    }
+    ,
+    {
+        "_id": 6,
+        "criteria": "Scaffold",
+        "type": "accessedBy",
+        "information": "Info 6"
+    }
+    ,
+    {
+        "_id": 7,
+        "criteria": "Rappel Line",
+        "type": "accessedBy",
+        "information": "Info 7"
+    }
+    ,
+    {
+        "_id": 8,
+        "criteria": "Ladder",
+        "type": "preformedOn",
+        "information": "Info "
+    }
+    ,
+    {
+        "_id": 9,
+        "criteria": "Scaffold",
+        "type": "preformedOn",
+        "information": "Info "
+    }
+    ,
+    {
+        "_id": 10,
+        "criteria": "Rappel Line",
+        "type": "preformedOn",
+        "information": "Info "
+    }
+    ,
+    {
+        "_id": 11,
+        "criteria": "Building Structure",
+        "type": "preformedOn",
+        "information": "Info "
+    }
+    ,
+    {
+        "_id": 12,
+        "criteria": "Openings in standing surface",
+        "type": "hazards",
+        "information": "Info "
+    }
+    ,
+    {
+        "_id": 13,
+        "criteria": "Electrical",
+        "type": "hazards",
+        "information": "Info "
+    }
+    ,
+    {
+        "_id": 14,
+        "criteria": "Operational Machinery",
+        "type": "hazards",
+        "information": "Info "
+    }
+    ,
+    {
+        "_id": 15,
+        "criteria": "Slippery",
+        "type": "hazards",
+        "information": "Info "
+    }
+    ,
+    {
+        "_id": 16,
+        "criteria": "Wind",
+        "type": "hazards",
+        "information": "Info "
+    }
+    ,
+    {
+        "_id": 17,
+        "criteria": "Low Visibility",
+        "type": "hazards",
+        "information": "Info "
+    }
+]}

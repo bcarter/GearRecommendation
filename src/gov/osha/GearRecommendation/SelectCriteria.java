@@ -2,6 +2,8 @@ package gov.osha.GearRecommendation;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -11,13 +13,23 @@ public class SelectCriteria extends Activity {
         setContentView(R.layout.selectcriterialayout);
 
         Spinner locationSpinner = (Spinner) findViewById(R.id.locationSpinner);
-// Create an ArrayAdapter using the string array and a default spinner layout
+
         ArrayAdapter<CharSequence> locationAdapter = ArrayAdapter.createFromResource(this,
                 R.array.location_array, android.R.layout.simple_spinner_item);
-// Specify the layout to use when the list of choices appears
+
         locationAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-// Apply the adapter to the spinner
+
         locationSpinner.setAdapter(locationAdapter);
+
+        locationSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+                Object item = parent.getItemAtPosition(pos);
+
+                System.out.println("location selected: " + item.toString());
+            }
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
 
         Spinner accessSpinner = (Spinner) findViewById(R.id.accessSpinner);
 // Create an ArrayAdapter using the string array and a default spinner layout
