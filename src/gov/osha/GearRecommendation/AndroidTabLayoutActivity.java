@@ -3,7 +3,6 @@ package gov.osha.GearRecommendation;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.widget.TabHost;
 
 /**
@@ -29,7 +28,7 @@ public class AndroidTabLayoutActivity extends TabActivity {
                 .setContent(new Intent(this, SelectCriteria.class)));
         tabHost.addTab(tabHost.newTabSpec("Hazards")
                 .setIndicator("Hazards")
-                .setContent(new Intent(this, SelectHazzrds.class)));
+                .setContent(new Intent(this, SelectHazards.class)));
         tabHost.addTab(tabHost.newTabSpec("Equipment")
                 .setIndicator("Equipment")
                 .setContent(new Intent(this, DisplayEquipment.class)));

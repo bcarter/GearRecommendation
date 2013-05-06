@@ -15,6 +15,10 @@ public class DBAdapter {
     private String[] allColumns = {DBHelper.COLUMN_ID,
             DBHelper.EQUIPMENT_COLUMN_ITEM,
             DBHelper.EQUIPMENT_COLUMN_INFORMATION};
+    private String[] allCriteriaColumns = {DBHelper.COLUMN_ID,
+            DBHelper.CRITERIA_COLUMN_CRITERIA,
+            DBHelper.CRITERIA_COLUMN_TYPE,
+            DBHelper.CRITERIA_COLUMN_INFORMATION};
 
     private static String TAG = "gov.osha.displayEquipment";
 
@@ -81,6 +85,37 @@ public class DBAdapter {
             }
             return sb.toString();
         }
+    }
+
+    public List<Criteria> getCriteria(String type) {
+        List<Criteria> criteriaList = new ArrayList<Criteria>();
+        ArrayList<String> selectionArgs = new ArrayList<String>();
+        selectionArgs.add(type);
+
+        String[] selectionArgsArray = new String[selectionArgs.size()];
+        selectionArgsArray = selectionArgs.toArray(selectionArgsArray);
+
+        Cursor cursor = db.query(DBHelper.TABLE_CRITERIA,
+                allCriteriaColumns, "type=?", selectionArgsArray, null, null, null);
+
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            Criteria criteria = cursorToCriteria(cursor);
+            criteriaList.add(criteria);
+            cursor.moveToNext();
+        }
+        // Make sure to close the cursor
+        cursor.close();
+        return criteriaList;
+    }
+
+    private Criteria cursorToCriteria(Cursor cursor) {
+        Criteria criteria = new Criteria();
+        criteria.setId(cursor.getInt(0));
+        criteria.setCriteria(cursor.getString(1));
+        criteria.setType(cursor.getString(2));
+        criteria.setInformation(cursor.getString(3));
+        return criteria;
     }
 
 //    public Equipment createEquipment(String item, String information) {

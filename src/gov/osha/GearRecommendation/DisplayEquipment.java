@@ -2,8 +2,8 @@ package gov.osha.GearRecommendation;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.view.View;
+import android.widget.*;
 
 import java.util.List;
 
@@ -70,6 +70,7 @@ public class DisplayEquipment extends Activity {
     protected void onResume() {
         datasource.open();
         super.onResume();
+        displayEquipment();
     }
 
     @Override
@@ -78,14 +79,23 @@ public class DisplayEquipment extends Activity {
         super.onPause();
     }
 
-//        ListView recommendedList = (ListView) findViewById(R.id.recommendedListView);
-//        ArrayAdapter<CharSequence> recommendedAdapter = ArrayAdapter.createFromResource(this,
-//                R.array.recommended_array, android.R.layout.simple_list_item_1);
-//        recommendedList.setAdapter(recommendedAdapter);
-
-//        ListView requiredList = (ListView) findViewById(R.id.requiredListView);
-//        ArrayAdapter<CharSequence> requiredAdapter = ArrayAdapter.createFromResource(this,
-//                R.array.required_array, android.R.layout.simple_list_item_1);
-//        requiredList.setAdapter(requiredAdapter);
+    public void displayEquipment() {
+//        LinearLayout layout = (LinearLayout)findViewById(R.id.CheckBox01);
+//        boolean success = formIsValid(layout);
+        GearRecommendation gearApp = ((GearRecommendation)getApplicationContext());
+        System.out.println("Rows " + gearApp.selectedCriteria.size());
+//        for (int i = 0; i < layout.getChildCount(); i++) {
+//            View v = layout.getChildAt(i);
+//            Class c = v.getClass();
+//            if (c == CheckBox.class) {
+//                //validate your EditText here
+//                System.out.println("Checkbox");
+//            } else if (c == RadioButton.class) {
+//                //validate RadioButton
+//            } //etc. If it fails anywhere, just return false.
+//        }
+//        return true;
+    System.out.println("Run query");
+    }
 }
 

@@ -20,7 +20,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String EQUIPMENT_COLUMN_INFORMATION = "information";
 
     public static final String TABLE_CRITERIA = "criteria";
-    public static final String CRITERIA_COLUMN_ITEM = "criteria";
+    public static final String CRITERIA_COLUMN_CRITERIA = "criteria";
     public static final String CRITERIA_COLUMN_TYPE = "type";
     public static final String CRITERIA_COLUMN_INFORMATION = "information";
 
@@ -47,7 +47,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     private static final String CRITERIA_DATABASE_CREATE = "create table "
             + TABLE_CRITERIA + "(" + COLUMN_ID
-            + " integer primary key, " + CRITERIA_COLUMN_ITEM
+            + " integer primary key, " + CRITERIA_COLUMN_CRITERIA
             + " text not null," + CRITERIA_COLUMN_TYPE
             + " text not null," + CRITERIA_COLUMN_INFORMATION
             + " text);";
@@ -126,7 +126,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
                 // Storing each json item in variable
                 initialValues.put(COLUMN_ID, c.getString(COLUMN_ID));
-                initialValues.put(CRITERIA_COLUMN_ITEM, c.getString(CRITERIA_COLUMN_ITEM));
+                initialValues.put(CRITERIA_COLUMN_CRITERIA, c.getString(CRITERIA_COLUMN_CRITERIA));
                 initialValues.put(CRITERIA_COLUMN_TYPE, c.getString(CRITERIA_COLUMN_TYPE));
                 initialValues.put(CRITERIA_COLUMN_INFORMATION, c.getString(CRITERIA_COLUMN_INFORMATION));
 
